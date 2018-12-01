@@ -1,0 +1,5 @@
+.idea/
+.gradle/
+out/
+test_files
+test_dist
