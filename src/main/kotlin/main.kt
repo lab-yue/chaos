@@ -52,11 +52,7 @@ fun main() = runBlocking {
         .walkTopDown()
         .forEach {
             when {
-                it.name == config.input -> {
-                    println("skip root")
-                    return@forEach
-                }
-                it.name + '/' == config.input -> {
+                it.isDirectory -> {
                     println("skip root")
                     return@forEach
                 }
